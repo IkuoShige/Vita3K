@@ -108,8 +108,8 @@ void SinglePassScreenFilter::create_graphics_pipeline() {
     // create shader modules
 
     fs::path builtin_shaders_path = screen.state.static_assets / "shaders-builtin/vulkan";
-    const auto vertex_shader_path = builtin_shaders_path / get_vertex_name();
-    const auto fragment_shader_path = builtin_shaders_path / get_fragment_name();
+    const auto vertex_shader_path = builtin_shaders_path / std::string(get_vertex_name());
+    const auto fragment_shader_path = builtin_shaders_path / std::string(get_fragment_name());
 
     vertex_shader = vkutil::load_shader(screen.state.device, vertex_shader_path);
     fragment_shader = vkutil::load_shader(screen.state.device, fragment_shader_path);

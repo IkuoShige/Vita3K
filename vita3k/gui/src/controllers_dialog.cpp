@@ -117,9 +117,9 @@ static void add_bind_to_table(GuiState &gui, EmuEnvState &emuenv, const SDL_Game
             }
             break;
         case SDL_CONTROLLER_TYPE_NINTENDO_SWITCH_PRO:
-        case SDL_CONTROLLER_TYPE_NINTENDO_SWITCH_JOYCON_LEFT:
-        case SDL_CONTROLLER_TYPE_NINTENDO_SWITCH_JOYCON_RIGHT:
-        case SDL_CONTROLLER_TYPE_NINTENDO_SWITCH_JOYCON_PAIR:
+        // case // SDL_CONTROLLER_TYPE_NINTENDO_SWITCH_JOYCON_LEFT:
+        // case // SDL_CONTROLLER_TYPE_NINTENDO_SWITCH_JOYCON_RIGHT:
+        // case // SDL_CONTROLLER_TYPE_NINTENDO_SWITCH_JOYCON_PAIR:
             switch (btn) {
             case SDL_CONTROLLER_BUTTON_BACK: return "-";
             case SDL_CONTROLLER_BUTTON_START: return "+";
